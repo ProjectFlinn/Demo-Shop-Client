@@ -17,15 +17,7 @@ const StorePage = () => {
   return (
     <div className='StorePage'>
       {products?.map((product) => (
-        <ProductCard
-          id={product.id}
-          name={product.name}
-          description={product.description}
-          imageUrl={product.imageUrl}
-          unitsInStock={product.unitsInStock}
-          basePrice={product.basePrice}
-          salePrice={product.salePrice}
-        />
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
