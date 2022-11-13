@@ -1,0 +1,12 @@
+.CheckoutPage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  &__basket {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

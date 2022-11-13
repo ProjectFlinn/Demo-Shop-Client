@@ -12,11 +12,11 @@ const Navbar = () => {
     <div className="Navbar">
       <nav>
         <Link to='/admin'>Admin</Link>
-        <Link to='/store'>Store</Link>
+        <Link to='/'>Store</Link>
         <Link to='/checkout'>Checkout</Link>
       </nav>
       <div className="Navbar__basket-info">
-        <span>{numberOfItemsInBasket}</span>
+        <span>Items in cart: {numberOfItemsInBasket}</span>
       </div>
     </div>
   )

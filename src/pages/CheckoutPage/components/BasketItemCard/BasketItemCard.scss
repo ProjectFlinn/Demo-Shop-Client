@@ -1,0 +1,49 @@
+.BasketItemCard {
+  display: flex;
+  max-height: 8rem;
+  width: 50rem;
+  border: 1px solid black;
+  justify-content: space-between;
+
+  &__image {
+    padding: 0.25rem;
+
+    h3 {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      width: 7rem;
+    }
+  }
+
+  &__quantity,
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    button {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 0.5rem;
+      background-color: blueviolet;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(98, 23, 168);
+      }
+    }
+  }
+}
