@@ -33,9 +33,9 @@ const ProductCard = ({product}: {product: Product}) => {
       <div className="product-card__actions">
         {isInBasket ?
         <>
-          <button className="product-card__actions__modify-quantity" onClick={incrementQuantityInBasket}>+</button>
-          <span>{productInBasket.quantity} in basket!</span>
           <button className="product-card__actions__modify-quantity" onClick={decrementQuantityInBasket}>-</button>
+          <span>{productInBasket.quantity} in basket!</span>
+          <button className="product-card__actions__modify-quantity" onClick={incrementQuantityInBasket}>+</button>
         </> : 
         <button className="product-card__actions__add-to-cart" onClick={incrementQuantityInBasket}>
           Add to basket
