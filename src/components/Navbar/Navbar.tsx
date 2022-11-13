@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <nav>
-        <Link to='/admin'>Admin</Link>
         <Link to='/'>Store</Link>
         <Link to='/checkout'>Checkout</Link>
       </nav>

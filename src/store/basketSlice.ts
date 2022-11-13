@@ -28,7 +28,7 @@ const basketSlice = createSlice({
       }
     },
     clearBasket(state: BasketItem[]) {
-      state = [];
+      return [];
     }
   }
 });

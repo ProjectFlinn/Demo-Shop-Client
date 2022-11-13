@@ -22,7 +22,7 @@ const BasketItemCard = ({ basketItem }: { basketItem: BasketItem }) => {
         <span>x{basketItem.quantity}</span>
       </div>
       <div className="BasketItemCard__price">
-        <span>{isLoading ? 'Loading...' : `Total cost: £${data?.totalPrice}`}</span>
+        <span>{isError ? 'Error!' : isLoading ? 'Loading...' : `Cost: £${data?.totalPrice}`}</span>
       </div>
       <div className="BasketItemCard__actions">
         <button onClick={decrementQuantityInBasket}>-</button>
